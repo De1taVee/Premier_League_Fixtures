@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Premier League Fixtures</string>
+    <string name="ChangeButton1">swtchbtn1</string>
+    <string name="buttontext1">Кнопка перехода</string>
+    <string name="_1">Фрагмент 1</string>
+    <string name="_2">К экрану 2</string>
+    <string name="_3">К экрану 1</string>
+    <string name="_11">Экран 1</string>
+    <string name="_22">Экран 2</string>
+</resources>
