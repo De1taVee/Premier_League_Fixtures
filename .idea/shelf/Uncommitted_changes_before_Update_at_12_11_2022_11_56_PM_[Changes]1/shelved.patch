@@ -1,0 +1,385 @@
+Index: app/src/main/res/layout/fragment_screen2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".screen2\">\r\n\r\n\r\n    <androidx.constraintlayout.widget.ConstraintLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\">\r\n\r\n\r\n        <TextView\r\n            android:id=\"@+id/textView2\"\r\n            android:layout_width=\"138dp\"\r\n            android:layout_height=\"164dp\"\r\n            android:layout_marginStart=\"136dp\"\r\n            android:layout_marginTop=\"153dp\"\r\n            android:layout_marginEnd=\"137dp\"\r\n            android:layout_marginBottom=\"414dp\"\r\n            android:text=\"@string/_22\"\r\n            android:textAppearance=\"@style/TextAppearance.AppCompat.Large\"\r\n            app:layout_constraintBottom_toBottomOf=\"parent\"\r\n            app:layout_constraintEnd_toEndOf=\"parent\"\r\n            app:layout_constraintHorizontal_bias=\"0.0\"\r\n            app:layout_constraintStart_toStartOf=\"parent\"\r\n            app:layout_constraintTop_toTopOf=\"parent\"\r\n            app:layout_constraintVertical_bias=\"0.0\"\r\n            tools:text=\"Экран 2\" />\r\n\r\n    </androidx.constraintlayout.widget.ConstraintLayout>\r\n</FrameLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_screen2.xml b/app/src/main/res/layout/fragment_screen2.xml
+--- a/app/src/main/res/layout/fragment_screen2.xml	
++++ b/app/src/main/res/layout/fragment_screen2.xml	
+@@ -14,21 +14,226 @@
+ 
+         <TextView
+             android:id="@+id/textView2"
+-            android:layout_width="138dp"
+-            android:layout_height="164dp"
+-            android:layout_marginStart="136dp"
+-            android:layout_marginTop="153dp"
+-            android:layout_marginEnd="137dp"
+-            android:layout_marginBottom="414dp"
+-            android:text="@string/_22"
++            android:layout_width="200dp"
++            android:layout_height="50dp"
++            android:layout_marginStart="100dp"
++            android:layout_marginTop="136dp"
++            android:layout_marginEnd="100dp"
++            android:text="Brentford - Arsenal"
+             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+-            app:layout_constraintBottom_toBottomOf="parent"
++            app:layout_constraintEnd_toEndOf="parent"
++            app:layout_constraintHorizontal_bias="1.0"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toTopOf="parent"
++            tools:text="Brentford - Arsenal" />
++
++        <TextView
++            android:id="@+id/textView"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="2-0"
++            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
++            app:layout_constraintEnd_toEndOf="parent"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@+id/textView2" />
++
++        <ImageView
++            android:id="@+id/imageView"
++            android:layout_width="60dp"
++            android:layout_height="51dp"
++            android:layout_marginTop="136dp"
++            android:src="@drawable/brentford_fc_crest_svg"
++            app:layout_constraintEnd_toStartOf="@+id/textView2"
++            app:layout_constraintHorizontal_bias="1.0"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toTopOf="parent" />
++
++        <ImageView
++            android:id="@+id/imageView2"
++            android:layout_width="62dp"
++            android:layout_height="50dp"
++            android:layout_marginTop="136dp"
++            android:src="@drawable/arsenal_fc_svg"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.0"
++            app:layout_constraintStart_toEndOf="@+id/textView2"
++            app:layout_constraintTop_toTopOf="parent" />
++
++        <TextView
++            android:id="@+id/textView3"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="48dp"
++            android:layout_marginTop="44dp"
++            android:text="Дата матча:"
++            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+             app:layout_constraintStart_toStartOf="parent"
+-            app:layout_constraintTop_toTopOf="parent"
+-            app:layout_constraintVertical_bias="0.0"
+-            tools:text="Экран 2" />
++            app:layout_constraintTop_toBottomOf="@+id/textView2" />
++
++        <TextView
++            android:id="@+id/textView5"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="92dp"
++            android:layout_marginTop="12dp"
++            android:text="Место:"
++            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@+id/textView3" />
++
++        <TextView
++            android:id="@+id/textView9"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="89dp"
++            android:layout_marginTop="10dp"
++            android:text="Группа:"
++            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@+id/textView5" />
++
++        <TextView
++            android:id="@+id/textView10"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="95dp"
++            android:layout_marginTop="12dp"
++            android:text="Раунд:"
++            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@+id/textView9" />
++
++        <TextView
++            android:id="@+id/textView7"
++            android:layout_width="92dp"
++            android:layout_height="57dp"
++            android:layout_marginStart="58dp"
++            android:layout_marginTop="10dp"
++            android:text="Домашняя команда:"
++            android:textAlignment="textEnd"
++            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@+id/textView6" />
++
++        <TextView
++            android:id="@+id/textView6"
++            android:layout_width="104dp"
++            android:layout_height="50dp"
++            android:layout_marginStart="44dp"
++            android:layout_marginTop="8dp"
++            android:text="Количество матчей:"
++            android:textAlignment="textEnd"
++            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@+id/textView10" />
++
++        <TextView
++            android:id="@+id/textView8"
++            android:layout_width="92dp"
++            android:layout_height="57dp"
++            android:layout_marginStart="58dp"
++            android:layout_marginTop="10dp"
++            android:text="Гостевая команда:"
++            android:textAlignment="textEnd"
++            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@+id/textView7" />
++
++        <TextView
++            android:id="@+id/textView4"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="6dp"
++            android:layout_marginTop="3dp"
++            android:text="13 августа 2021"
++            app:layout_constraintStart_toEndOf="@+id/textView3"
++            app:layout_constraintTop_toBottomOf="@+id/textView" />
++
++        <TextView
++            android:id="@+id/textView13"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="6dp"
++            android:layout_marginTop="18dp"
++            android:text="Brentford Community Stadium"
++            app:layout_constraintStart_toEndOf="@+id/textView5"
++            app:layout_constraintTop_toBottomOf="@+id/textView4" />
++
++        <TextView
++            android:id="@+id/textView14"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="6dp"
++            android:layout_marginTop="14dp"
++            android:text="Отсутствует"
++            app:layout_constraintStart_toEndOf="@+id/textView9"
++            app:layout_constraintTop_toBottomOf="@+id/textView13" />
++
++        <TextView
++            android:id="@+id/textView15"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="6dp"
++            android:layout_marginTop="17dp"
++            android:text="Первый"
++            app:layout_constraintStart_toEndOf="@+id/textView10"
++            app:layout_constraintTop_toBottomOf="@+id/textView14" />
++
++        <TextView
++            android:id="@+id/textView16"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="8dp"
++            android:layout_marginTop="21dp"
++            android:text="Один"
++            app:layout_constraintStart_toEndOf="@+id/textView6"
++            app:layout_constraintTop_toBottomOf="@+id/textView15" />
++
++        <TextView
++            android:id="@+id/textView17"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="6dp"
++            android:layout_marginTop="47dp"
++            android:text="Brentford"
++            android:textAppearance="@style/TextAppearance.AppCompat.Large"
++            app:layout_constraintStart_toEndOf="@+id/textView7"
++            app:layout_constraintTop_toBottomOf="@+id/textView16" />
++
++        <TextView
++            android:id="@+id/textView18"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="6dp"
++            android:layout_marginTop="37dp"
++            android:text="Arsenal"
++            android:textAppearance="@style/TextAppearance.AppCompat.Large"
++            app:layout_constraintStart_toEndOf="@+id/textView8"
++            app:layout_constraintTop_toBottomOf="@+id/textView17" />
++
++        <TextView
++            android:id="@+id/textView11"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginTop="14dp"
++            android:layout_marginEnd="4dp"
++            android:text="Дом"
++            app:layout_constraintEnd_toStartOf="@+id/textView"
++            app:layout_constraintHorizontal_bias="1.0"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@+id/textView2" />
++
++        <TextView
++            android:id="@+id/textView12"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:layout_marginStart="2dp"
++            android:layout_marginTop="14dp"
++            android:text="Гости"
++            app:layout_constraintEnd_toEndOf="parent"
++            app:layout_constraintHorizontal_bias="0.0"
++            app:layout_constraintStart_toEndOf="@+id/textView"
++            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+ 
+     </androidx.constraintlayout.widget.ConstraintLayout>
+ </FrameLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_screen1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<FrameLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/button1\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".screen1\">\r\n\r\n    <androidx.constraintlayout.widget.ConstraintLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\">\r\n\r\n        <TextView\r\n            android:id=\"@+id/textView2\"\r\n            android:layout_width=\"138dp\"\r\n            android:layout_height=\"164dp\"\r\n            android:layout_marginStart=\"136dp\"\r\n            android:layout_marginTop=\"153dp\"\r\n            android:layout_marginEnd=\"137dp\"\r\n            android:layout_marginBottom=\"414dp\"\r\n            android:text=\"@string/_11\"\r\n            android:textAppearance=\"@style/TextAppearance.AppCompat.Large\"\r\n            app:layout_constraintBottom_toBottomOf=\"parent\"\r\n            app:layout_constraintEnd_toEndOf=\"parent\"\r\n            app:layout_constraintHorizontal_bias=\"0.0\"\r\n            app:layout_constraintStart_toStartOf=\"parent\"\r\n            app:layout_constraintTop_toTopOf=\"parent\"\r\n            app:layout_constraintVertical_bias=\"0.0\"\r\n            tools:text=\"Экран 1\" />\r\n    </androidx.constraintlayout.widget.ConstraintLayout>\r\n</FrameLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_screen1.xml b/app/src/main/res/layout/fragment_screen1.xml
+--- a/app/src/main/res/layout/fragment_screen1.xml	
++++ b/app/src/main/res/layout/fragment_screen1.xml	
+@@ -13,20 +13,53 @@
+ 
+         <TextView
+             android:id="@+id/textView2"
+-            android:layout_width="138dp"
+-            android:layout_height="164dp"
+-            android:layout_marginStart="136dp"
++            android:layout_width="200dp"
++            android:layout_height="50dp"
++            android:layout_marginStart="100dp"
+             android:layout_marginTop="153dp"
+-            android:layout_marginEnd="137dp"
++            android:layout_marginEnd="100dp"
+             android:layout_marginBottom="414dp"
+-            android:text="@string/_11"
++            android:text="Brentford - Arsenal"
+             android:textAppearance="@style/TextAppearance.AppCompat.Large"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+-            app:layout_constraintHorizontal_bias="0.0"
++            app:layout_constraintHorizontal_bias="0.454"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.0"
+-            tools:text="Экран 1" />
++            tools:text="Brentford - Arsenal" />
++
++        <TextView
++            android:id="@+id/textView"
++            android:layout_width="wrap_content"
++            android:layout_height="wrap_content"
++            android:text="2-0"
++            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
++            app:layout_constraintEnd_toEndOf="parent"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toBottomOf="@+id/textView2" />
++
++        <ImageView
++            android:id="@+id/imageView"
++            android:layout_width="60dp"
++            android:layout_height="51dp"
++            android:layout_marginTop="152dp"
++            android:src="@drawable/brentford_fc_crest_svg"
++            app:layout_constraintEnd_toStartOf="@+id/textView2"
++            app:layout_constraintHorizontal_bias="1.0"
++            app:layout_constraintStart_toStartOf="parent"
++            app:layout_constraintTop_toTopOf="parent" />
++
++        <ImageView
++            android:id="@+id/imageView2"
++            android:layout_width="62dp"
++            android:layout_height="50dp"
++            android:layout_marginTop="152dp"
++            android:src="@drawable/arsenal_fc_svg"
++            app:layout_constraintEnd_toEndOf="parent"
++            app:layout_constraintHorizontal_bias="0.0"
++            app:layout_constraintStart_toEndOf="@+id/textView2"
++            app:layout_constraintTop_toTopOf="parent" />
++
+     </androidx.constraintlayout.widget.ConstraintLayout>
+ </FrameLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/premierleaguefixtures/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.premierleaguefixtures\r\n\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport android.os.Bundle\r\nimport android.widget.Button\r\n\r\n\r\nclass MainActivity : AppCompatActivity() {\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        setContentView(R.layout.activity_main)\r\n        val scrn1 = screen1()\r\n        val scrn2 = screen2()\r\n\r\n\r\n\r\n\r\n        findViewById<Button>(R.id.tosreeen1).setOnClickListener {\r\n            supportFragmentManager.beginTransaction().apply {\r\n                replace(R.id.fragmentShow,scrn1)\r\n                commit()\r\n            }\r\n        }\r\n\r\n        findViewById<Button>(R.id.toscreen2).setOnClickListener {\r\n            supportFragmentManager.beginTransaction().apply {\r\n                replace(R.id.fragmentShow,scrn2)\r\n                commit()\r\n            }\r\n        }\r\n\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/premierleaguefixtures/MainActivity.kt b/app/src/main/java/com/example/premierleaguefixtures/MainActivity.kt
+--- a/app/src/main/java/com/example/premierleaguefixtures/MainActivity.kt	
++++ b/app/src/main/java/com/example/premierleaguefixtures/MainActivity.kt	
+@@ -10,6 +10,7 @@
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+         setContentView(R.layout.activity_main)
++        supportActionBar?.title = "Football match result"
+         val scrn1 = screen1()
+         val scrn2 = screen2()
+ 
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <androidx.fragment.app.FragmentContainerView\r\n        android:id=\"@+id/fragmentShow\"\r\n        android:name=\"com.example.premierleaguefixtures.screen1\"\r\n        android:layout_width=\"410dp\"\r\n        android:layout_height=\"667dp\"\r\n        app:layout_constraintBottom_toBottomOf=\"parent\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintHorizontal_bias=\"0.333\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\"\r\n        app:layout_constraintVertical_bias=\"1.0\"\r\n        tools:layout=\"@layout/fragment_screen1\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/tosreeen1\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginTop=\"12dp\"\r\n        android:text=\"@string/_3\"\r\n        app:layout_constraintEnd_toStartOf=\"@+id/toscreen2\"\r\n        app:layout_constraintHorizontal_bias=\"0.3\"\r\n        app:layout_constraintStart_toStartOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n\r\n    <Button\r\n        android:id=\"@+id/toscreen2\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginTop=\"12dp\"\r\n        android:layout_marginEnd=\"32dp\"\r\n        android:text=\"@string/_2\"\r\n        app:layout_constraintEnd_toEndOf=\"parent\"\r\n        app:layout_constraintTop_toTopOf=\"parent\" />\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	
++++ b/app/src/main/res/layout/activity_main.xml	
+@@ -21,22 +21,24 @@
+ 
+     <Button
+         android:id="@+id/tosreeen1"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginTop="12dp"
+-        android:text="@string/_3"
++        style="@style/Widget.AppCompat.Button"
++        android:layout_width="191dp"
++        android:layout_height="60dp"
++        android:layout_marginTop="4dp"
++        android:text="Матч"
+         app:layout_constraintEnd_toStartOf="@+id/toscreen2"
+-        app:layout_constraintHorizontal_bias="0.3"
++        app:layout_constraintHorizontal_bias="0.761"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ 
+     <Button
+         android:id="@+id/toscreen2"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginTop="12dp"
+-        android:layout_marginEnd="32dp"
+-        android:text="@string/_2"
++        style="@style/Widget.AppCompat.Button"
++        android:layout_width="200dp"
++        android:layout_height="60dp"
++        android:layout_marginTop="4dp"
++        android:layout_marginEnd="8dp"
++        android:text="Детали"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ </androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
